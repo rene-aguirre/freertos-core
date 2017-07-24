@@ -949,6 +949,10 @@ typedef struct xSTATIC_TCB
 		uint8_t			uxDummy20;
 	#endif
 
+	#if( INCLUDE_xTaskAbortDelay == 1 )
+		uint8_t ucDummy21;
+	#endif
+
 } StaticTask_t;
 
 /*
